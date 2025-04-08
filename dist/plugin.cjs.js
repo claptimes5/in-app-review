@@ -1,11 +1,9 @@
 'use strict';
 
-Object.defineProperty(exports, '__esModule', { value: true });
-
 var core = require('@capacitor/core');
 
 const InAppReview = core.registerPlugin('InAppReview', {
-    web: () => Promise.resolve().then(function () { return web; }).then(m => new m.InAppReviewWeb()),
+    web: () => Promise.resolve().then(function () { return web; }).then((m) => new m.InAppReviewWeb()),
 });
 
 class InAppReviewWeb extends core.WebPlugin {
